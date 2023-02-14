@@ -1,0 +1,45 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+library-management-system-frontend/dist
+library-management-system-frontend/tmp
+library-management-system-frontend/out-tsc
+# Only exists if Bazel was run
+/bazel-out
+
+# dependencies
+library-management-system-frontend/node_modules
+
+# profiling files
+library-management-system-frontend/chrome-profiler-events*.json
+
+# IDEs and editors
+library-management-system/.idea
+library-management-system/.project
+library-management-system/.classpath
+library-management-system/.c9/
+library-management-system/*.launch
+library-management-system/.settings/
+library-management-system/*.sublime-workspace
+
+# IDE - VSCode
+library-management-system-frontend/.vscode/*
+library-management-system-frontend/!.vscode/settings.json
+library-management-system-frontend/!.vscode/tasks.json
+library-management-system-frontend/!.vscode/launch.json
+library-management-system-frontend/!.vscode/extensions.json
+library-management-system-frontend/.history/*
+
+# misc
+library-management-system-frontend/.sass-cache
+library-management-system-frontend/connect.lock
+library-management-system-frontend/coverage
+library-management-system-frontend/libpeerconnection.log
+library-management-system-frontend/npm-debug.log
+library-management-system-frontend/yarn-error.log
+library-management-system-frontend/testem.log
+library-management-system-frontend//typings
+
+# System Files
+ws-library/.DS_Store
+ws-library/Thumbs.db
