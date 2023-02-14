@@ -43,3 +43,4 @@ library-management-system-frontend//typings
 # System Files
 ws-library/.DS_Store
 ws-library/Thumbs.db
+/library-management-system/src/main/resources/application.properties
