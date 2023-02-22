@@ -3,7 +3,10 @@ export interface Book {
   title: string;
   author: string;
   publicationYear: number;
-  publisher: string;
   genre: string;
   pageCount: number;
+  thumbnailUrl: string;
+  isbn: number;
+  publisher: string;
+  language: string;
 }

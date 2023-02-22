@@ -1,3 +1,21 @@
 table {
   width: 100%;
 }
+
+
+.card-image {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.mat-card {
+  max-width: 300px;
+}
+
+.centered-element {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  text-align: center;
+}

@@ -1,4 +1,7 @@
+import { toArray } from 'rxjs/operators';
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+
 import { Book } from '../model/book';
 import { BooksService } from '../services/books.service';
 
@@ -8,19 +11,25 @@ import { BooksService } from '../services/books.service';
   styleUrls: ['./books.component.scss'],
 })
 export class BooksComponent implements OnInit {
-  displayedColumns: string[] = [
-    'Titulo',
-    'Autor',
-    'Ano de Publicação',
-    'Gênero',
-    'Páginas',
-  ];
 
-  dataSource: Book[] = [];
+  books$: Observable<Book[]> | null = null;
+  books: Book[] = [];
 
-  constructor(private service: BooksService) {}
+  constructor(private booksService: BooksService) {
+    this.refresh();
+  }
 
-  ngOnInit(): void {
-    this.dataSource = this.service.list();
+  ngOnInit(): void {}
+
+  refresh() {
+    this.books$ = this.booksService.listAll();
+    this.books$.subscribe(
+      (books) => {
+        this.books = books;
+      },
+      (error) => {
+        console.error(error);
+      }
+    );
   }
 }
