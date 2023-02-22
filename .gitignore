@@ -44,3 +44,5 @@ library-management-system-frontend//typings
 ws-library/.DS_Store
 ws-library/Thumbs.db
 /library-management-system/src/main/resources/application.properties
+
+livros.json
