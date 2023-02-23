@@ -41,13 +41,6 @@ public class Book {
     private String thumbnailUrl;
 
     @NotNull
-    private Long isbn;
-
-    @NotNull
     @NotBlank
     private String publisher;
-
-    @NotNull
-    @NotBlank
-    private String language;
 }

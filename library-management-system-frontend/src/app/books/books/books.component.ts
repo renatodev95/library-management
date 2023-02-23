@@ -12,7 +12,6 @@ import { BooksService } from '../services/books.service';
 })
 export class BooksComponent implements OnInit {
 
-  books$: Observable<Book[]> | null = null;
   books: Book[] = [];
 
   constructor(private booksService: BooksService) {
@@ -22,8 +21,8 @@ export class BooksComponent implements OnInit {
   ngOnInit(): void {}
 
   refresh() {
-    this.books$ = this.booksService.listAll();
-    this.books$.subscribe(
+    this.booksService.listAll()
+    .subscribe(
       (books) => {
         this.books = books;
       },

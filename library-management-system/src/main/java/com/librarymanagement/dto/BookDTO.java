@@ -8,14 +8,11 @@ public record BookDTO(
         @JsonProperty("_id") Long id,
         @NotNull @NotBlank String title,
         @NotNull @NotBlank String author,
-        @NotNull @NotBlank Integer publicationYear,
+        @NotNull Integer publicationYear,
         @NotNull @NotBlank String genre,
-        @NotNull @NotBlank Integer pageCount,
+        @NotNull Integer pageCount,
         @NotNull @NotBlank String thumbnailUrl,
-        @NotNull @NotBlank Long isbn,
-        @NotNull @NotBlank String publisher,
-        @NotNull @NotBlank String language
-        
+        @NotNull @NotBlank String publisher
 ) {
-    
+
 }

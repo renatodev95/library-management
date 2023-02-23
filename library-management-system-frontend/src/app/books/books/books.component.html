@@ -1,6 +1,6 @@
 <mat-grid-list cols="3" gutterSize="10px">
-  <mat-grid-tile *ngFor="let book of books">
-    <mat-card class="mat-card">
+  <mat-grid-tile *ngFor="let book of books" colspan="1">
+    <mat-card class="mat-card" style="max-width: 500px;">
       <mat-card-title>{{ book.title }}</mat-card-title>
       <mat-card-subtitle>Autor: {{ book.author }}</mat-card-subtitle>
       <img mat-card-image class="card-image" src="{{ book.thumbnailUrl }}">

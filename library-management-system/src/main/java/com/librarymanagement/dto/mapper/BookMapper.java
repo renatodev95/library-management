@@ -19,9 +19,7 @@ public class BookMapper {
                 book.getGenre(),
                 book.getPageCount(),
                 book.getThumbnailUrl(),
-                book.getIsbn(),
-                book.getPublisher(),
-                book.getLanguage());
+                book.getPublisher());
     }
 
     public Book toEntity(BookDTO bookDTO) {
@@ -40,9 +38,7 @@ public class BookMapper {
         book.setGenre(bookDTO.genre());
         book.setPageCount(bookDTO.pageCount());
         book.setThumbnailUrl(bookDTO.thumbnailUrl());
-        book.setIsbn(bookDTO.isbn());
         book.setPublisher(bookDTO.publisher());
-        book.setLanguage(bookDTO.language());
         return book;
     }
 }
