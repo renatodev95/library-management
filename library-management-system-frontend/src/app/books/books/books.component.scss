@@ -3,14 +3,18 @@ table {
 }
 
 
-.card-image {
-  max-width: 100%;
-  max-height: 200px;
-  object-fit: contain;
-}
+// .card-image {
+//   max-width: 100%;
+//   max-height: 100%;
+//   object-fit: contain;
+// }
 
 .mat-card {
-  max-width: 300px;
+  max-width: 200px;
+}
+
+.tile {
+  width: 50px;
 }
 
 .centered-element {
@@ -19,3 +23,11 @@ table {
   width: 100px;
   text-align: center;
 }
+
+.example-container {
+  width: 95%;
+  height: 100%;
+  margin: 10px;
+  border: 1px solid #555;
+}
+
