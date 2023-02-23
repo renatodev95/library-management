@@ -1,12 +1,15 @@
-<mat-grid-list cols="3" rowHeight="600px">
-  <mat-grid-tile *ngFor="let book of books" class="tile">
-    <mat-card class="mat-card">
-      <mat-card-title style="text-align: center;">{{ book.title }}</mat-card-title>
-      <mat-card-subtitle style="text-align: center;">{{ book.author }}</mat-card-subtitle>
-      <img mat-card-image class="card-image" src="{{ book.thumbnailUrl }}">
-      <mat-card-actions>
-        <button mat-button class="centered-element">DISPONÍVEL</button>
-      </mat-card-actions>
-    </mat-card>
-  </mat-grid-tile>
-</mat-grid-list>
+<div class="container">
+  <mat-toolbar color="primary" class="radius">Livros Disponíveis</mat-toolbar>
+  <mat-grid-list cols="3" rowHeight="600px">
+    <mat-grid-tile *ngFor="let book of books" class="tile">
+      <mat-card class="mat-card radius">
+        <mat-card-title style="text-align: center;">{{ book.title }}</mat-card-title>
+        <mat-card-subtitle style="text-align: center;">{{ book.author }}</mat-card-subtitle>
+        <img mat-card-image class="card-image" src="{{ book.thumbnailUrl }}">
+        <mat-card-actions>
+          <button mat-button class="centered-element">DISPONÍVEL</button>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
